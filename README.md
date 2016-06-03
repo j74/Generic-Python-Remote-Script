@@ -1,9 +1,21 @@
 # Generic-Python-Remote-Script
 Ableton Live - Generic Configurable Python Scripts
-
 MIDI Remote script which can be customized for any MIDI controller.
 
-To customize the only file to edit is the MIDI_Map.py script.
+To install in Live,
+1) Choose a name for you script. For example we will choose "MyName".
+3) Edit the the "Generic.py" file and replace all instances of the word "Generic" with "MyName" (the name you choose at point 1).
+3) Rename the "Generic.py" to "MyName.py" (as you choose at point 1).
+4) Edit the "__init__.py" script replacing "Generic" with "MyName" (or any other name consistent to step 1 above)
+5) Rename/name the directory containing all the .py scripts as "MyName" (the name you choose at point 1)
+6) Edit the mappings as explained in the CUSTOMIZE INSTRUCTIONS reported below.
+7) Copy the directory into Live MIDI script folder:
+On a MAC machine: /Contents/App-Resources/MIDI Remote Scripts/
+On a Windows machine: \ProgramData\Ableton\Live x.x\Resources\MIDI Remote Scripts\
+8) Select the script as Control Surface in Live preferences, and couple it with the MIDI controller you want to use.
+
+# CUSTOMIZE INSTRUCTIONS
+To customize for MIDI associations to functions the file to edit is the "MIDI_Map.py" script.
 This requires you to:
 
 1. Define The dimension of the surfaces (for the "session view box").
@@ -11,8 +23,8 @@ The clip session matrix definition must be matrix MATRIX_DEPTH * TRACK_NUMBER
 Further all other vectors referring to tracks must be TRACK_NUMBER long.
 
 To define this set:
-MATRIX_DEPTH = X #number of scenes in the box
-TRACK_NUMBER = Y #number of tracks for Mixer mapping
+MATRIX_DEPTH = X #number of scenes in the box (X >= 0)
+TRACK_NUMBER = Y #number of tracks for Mixer mapping (Y >= 0)
 
 2. Define the special functions / buttons (only buttons, no sliders):
 NUMBER_BUTTONS = 40 #number of buttons in BUTTON_VECTOR
@@ -70,3 +82,4 @@ SCENELAUNCH_CH = (0, #Scene 1
                0, #Scene 10
                )
 
+A similar setup applies to all other associations.
