@@ -2,16 +2,25 @@
 Ableton Live - Generic Configurable Python Scripts
 MIDI Remote script which can be customized for any MIDI controller.
 
-To install in Live,
+# To install in Live,
 1) Choose a name for you script. For example we will choose "MyName".
-3) Edit the the "Generic.py" file and replace all instances of the word "Generic" with "MyName" (the name you choose at point 1).
+
+2) Edit the the "Generic.py" file and replace all instances of the word "Generic" with "MyName" (the name you choose at point 1).
+
 3) Rename the "Generic.py" to "MyName.py" (as you choose at point 1).
+
 4) Edit the "__init__.py" script replacing "Generic" with "MyName" (or any other name consistent to step 1 above)
+
 5) Rename/name the directory containing all the .py scripts as "MyName" (the name you choose at point 1)
+
 6) Edit the mappings as explained in the CUSTOMIZE INSTRUCTIONS reported below.
+
 7) Copy the directory into Live MIDI script folder:
+
 On a MAC machine: /Contents/App-Resources/MIDI Remote Scripts/
+
 On a Windows machine: \ProgramData\Ableton\Live x.x\Resources\MIDI Remote Scripts\
+
 8) Select the script as Control Surface in Live preferences, and couple it with the MIDI controller you want to use.
 
 # CUSTOMIZE INSTRUCTIONS
