@@ -29,7 +29,7 @@ On a Windows machine: \ProgramData\Ableton\Live x.x\Resources\MIDI Remote Script
 To customize for MIDI associations to functions the file to edit is the "MIDI_Map.py" script.
 This requires you to:
 
-1. Define The dimension of the surfaces (for the "session view box").
+1) Define The dimension of the surfaces (for the "session view box").
 The clip session matrix definition must be matrix MATRIX_DEPTH * TRACK_NUMBER
 Further all other vectors referring to tracks must be TRACK_NUMBER long.
 
@@ -37,19 +37,19 @@ To define this set:
 MATRIX_DEPTH = X #number of scenes in the box (X >= 0)
 TRACK_NUMBER = Y #number of tracks for Mixer mapping (Y >= 0)
 
-2. Define the special functions / buttons (only buttons, no sliders):
+2) Define the special functions / buttons (only buttons, no sliders):
 NUMBER_BUTTONS = 40 #number of buttons in BUTTON_VECTOR
 NUMBER_SLIDERS = 4 #number of sliders in SLIDER_VECTOR
 
-3. Define the Device control banks and parameter number:
+3) Define the Device control banks and parameter number:
 BANKS_NUMBER = 8 #number of parameter banks
 PARAMS_NUMBER = 8 #number of parameters per bank
 
-4. Define Pad numbers for drum rack support
+4) Define Pad numbers for drum rack support
 PAD_X_NUMBER = 4 #number of pad columns
 PAD_Y_NUMBER = 4 #number of pad rows
 
-5. When assigning MIDI messages (notes or CC) to controls in Live, keep in mind that in general each association requires THREE values to be specified:
+5) When assigning MIDI messages (notes or CC) to controls in Live, keep in mind that in general each association requires THREE values to be specified:
 
 - The MIDI message Number for Note or CC (Control Change) to be used (-1 for no association)
 - The Type of MIDI message (Type 0 == MIDI notes, Type 1 == MIDI CC)
