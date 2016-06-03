@@ -9,7 +9,7 @@ MIDI Remote script which can be customized for any MIDI controller.
 
 3) Rename the "Generic.py" to "MyName.py" (as you choose at point 1).
 
-4) Edit the "__init__.py" script replacing "Generic" with "MyName" (or any other name consistent to step 1 above)
+4) Edit the "__ init __.py" script replacing "Generic" with "MyName" (or any other name consistent to step 1 above)
 
 5) Rename/name the directory containing all the .py scripts as "MyName" (the name you choose at point 1)
 
