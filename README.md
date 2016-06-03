@@ -5,7 +5,7 @@ MIDI Remote script which can be customized for any MIDI controller.
 # To install in Live,
 1) Choose a name for you script. For example we will choose "MyName".
 
-2) Edit the the "Generic.py" file and replace all instances of the word "Generic" with "MyName" (the name you choose at point 1).
+2) Edit the the "Generic.py" file and replace all instances of the word "Generic" with "MyName" (the name chosen at point 1).
 
 3) Rename the "Generic.py" to "MyName.py" (as you choose at point 1).
 
