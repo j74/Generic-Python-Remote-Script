@@ -13,7 +13,7 @@ MIDI Remote script which can be customized for any MIDI controller.
 
 5) Rename/name the directory containing all the .py scripts as "MyName" (the name you choose at point 1)
 
-6) Edit the mappings as explained in the CUSTOMIZE INSTRUCTIONS reported below.
+6) Edit the mappings in the "MIDI_Map.py" file as explained in the CUSTOMIZE INSTRUCTIONS below.
 
 7) Copy the directory into Live MIDI script folder:
 
