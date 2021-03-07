@@ -10,12 +10,12 @@ from _Framework.ChannelStripComponent import ChannelStripComponent
 from _Framework.DeviceComponent import DeviceComponent
 from _Framework.ControlSurfaceComponent import ControlSurfaceComponent
 from _Framework.SessionZoomingComponent import SessionZoomingComponent
-from SpecialMixerComponent import SpecialMixerComponent
-from SpecialTransportComponent import SpecialTransportComponent
-from SpecialSessionComponent import SpecialSessionComponent
-from SpecialZoomingComponent import SpecialZoomingComponent
-from SpecialViewControllerComponent import DetailViewControllerComponent
-from MIDI_Map import *
+from .SpecialMixerComponent import SpecialMixerComponent
+from .SpecialTransportComponent import SpecialTransportComponent
+from .SpecialSessionComponent import SpecialSessionComponent
+from .SpecialZoomingComponent import SpecialZoomingComponent
+from .SpecialViewControllerComponent import DetailViewControllerComponent
+from .MIDI_Map import *
 
 class Generic(ControlSurface):
     __doc__ = " Script for FCB1010 in APC emulation mode "
